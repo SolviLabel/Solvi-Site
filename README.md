@@ -1,2 +1,8 @@
-Things To DO:
-1.Create a list of things to do
+## What's New!
+-[Place Holder]
+
+# What is Solvi-Site
+-[Place Holder]
+
+# What Are Next Move
+-Add list of thing to do
