@@ -10,46 +10,47 @@
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #0a0a0a;
       color: #eaeaea;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 2rem;
     }
     img {
-      max-width: 300px;
+      width: 100%;
       border-radius: 8px;
-      display: block;
       margin-bottom: 1rem;
-    }
-    .back {
-      color: #ccc;
-      text-decoration: underline;
-      display: inline-block;
-      margin-bottom: 1.5rem;
     }
     h1 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
     }
     p {
+      line-height: 1.6;
       color: #aaa;
-      margin-bottom: 0.5rem;
     }
     .price {
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-top: 1rem;
+    }
+    .back {
+      margin-top: 2rem;
+      display: inline-block;
+      color: #888;
+    }
+    .back:hover {
+      color: #fff;
     }
   </style>
 </head>
 <body>
-
-  <a class="back" href="index.html">&larr; Back to shop</a>
-
-  <img src="https://via.placeholder.com/300x400?text=Black+Hoodie" alt="Blackout Hoodie">
-  <h1>Blackout Hoodie</h1>
-  <p class="price">$85</p>
-  <p><strong>Description:</strong> Heavyweight fleece hoodie made with organic cotton. Nordic minimalism meets streetwear edge.</p>
-  <p><strong>Sizes Available:</strong> S, M, L, XL</p>
-  <p><strong>Units Sold:</strong> 412</p>
-  <p><strong>Material:</strong> 100% Organic Cotton</p>
-
+  <div class="container">
+    <h1>Blackout Hoodie</h1>
+    <img src="https://via.placeholder.com/600x750?text=Black+Hoodie" alt="Blackout Hoodie">
+    <p>This ultra-soft, heavyweight hoodie features a minimalist Nordic design in deep black. Crafted for comfort and subtle confidence.</p>
+    <p><strong>Sold:</strong> 127 units</p>
+    <p class="price">$85</p>
+    <a class="back" href="index.html">← Back to Home</a>
+  </div>
 </body>
 </html>
-
