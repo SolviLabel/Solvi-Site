@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SÖLVI | Collections</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #eaeaea;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      color: #fff;
+    }
+    .collection-section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .collection-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+    .slider-container {
+      position: relative;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      display: flex;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    .slider-container::-webkit-scrollbar {
+      display: none;
+    }
+    .product-card {
+      flex: 0 0 auto;
+      width: 240px;
+      background-color: #111;
+      border-radius: 8px;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .product-card h3 {
+      margin: 0.75rem 0 0.25rem;
+      color: #eee;
+    }
+    .product-card p {
+      margin: 0;
+      color: #aaa;
+    }
+    .nav-btns {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .nav-btns button {
+      background: none;
+      border: 1px solid #444;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-btns button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SÖLVI</h1>
+  </header>
 
+  <section class="collection-section">
+    <h2>Explore the Collection</h2>
+    <div class="slider-container" id="slider">
+      <div class="product-card">
+        <img src="images/BlvckHoodie.png" alt="Black Hoodie">
+        <h3>Blackout Hoodie</h3>
+        <p>$85</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/240x300?text=White+Tee" alt="White Tee">
+        <h3>Signature Tee</h3>
+        <p>$45</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/240x300?text=Cap" alt="Cap">
+        <h3>Low-Profile Cap</h3>
+        <p>$30</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/240x300?text=Oversized+Crewneck" alt="Crewneck">
+        <h3>Oversized Crewneck</h3>
+        <p>$70</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/240x300?text=Joggers" alt="Joggers">
+        <h3>Minimal Joggers</h3>
+        <p>$60</p>
+      </div>
+    </div>
+
+    <div class="nav-btns">
+      <button onclick="scrollSlider(-1)">← Prev</button>
+      <button onclick="scrollSlider(1)">Next →</button>
+    </div>
+  </section>
+
+  <script>
+    function scrollSlider(direction) {
+      const slider = document.getElementById('slider');
+      const scrollAmount = 260; // Adjust if needed
+      slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
