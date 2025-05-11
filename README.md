@@ -1,10 +1,10 @@
 ## Website Link
--https://solvilabel.github.io/Solvi-Site/index.html
+- https://solvilabel.github.io/Solvi-Site/index.html
 # What's New!
--All Redirects are now Working
+- All Redirects are now Working
 
 # What is Solvi-Label
--[Place Holder]<-same answer for about section 
+- [Place Holder]<-same answer for about section 
 
 # What's Are Next Move
 - Fix Collection.html redirects
