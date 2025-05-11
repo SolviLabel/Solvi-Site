@@ -1,5 +1,5 @@
 ##Website Link
-https://solvilabel.github.io/Solvi-Site/index.html
+-https://solvilabel.github.io/Solvi-Site/index.html
 ## What's New!
 -All Redirects are now Working
 
