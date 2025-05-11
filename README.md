@@ -7,8 +7,8 @@
 -[Place Holder]<-same answer for about section 
 
 # What's Are Next Move
--Fix Collection.html redirects
--Add X or twitter Link later
--Finalize products and images
--Clean up homepage and add more
--Add a way to cheak Purchases
+- Fix Collection.html redirects
+- Add X or twitter Link later
+- Finalize products and images
+- Clean up homepage and add more
+- Add a way to cheak Purchases
