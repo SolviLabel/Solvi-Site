@@ -83,6 +83,24 @@
       background-color: #fff;
       color: #000;
     }
+    .return-link {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .return-link a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #444;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .return-link a:hover {
+      background-color: #fff;
+      color: #000;
+    }
   </style>
 </head>
 <body>
@@ -124,16 +142,18 @@
       <button onclick="scrollSlider(-1)">← Prev</button>
       <button onclick="scrollSlider(1)">Next →</button>
     </div>
-    <a class="back-link" href="index.html">← Back to Home</a>
+  </section>
+
+  <section class="return-link">
+    <a href="index.html">← Return to Home</a>
   </section>
 
   <script>
     function scrollSlider(direction) {
       const slider = document.getElementById('slider');
-      const scrollAmount = 260; // Adjust if needed
+      const scrollAmount = 260;
       slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
   </script>
-  <a class="back-link" href="index.html">← Back to Home</a>
 </body>
 </html>
