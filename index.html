@@ -29,73 +29,63 @@
       text-decoration: none;
     }
 
-    header {
-      padding: 10rem 2rem 4rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      letter-spacing: 4px;
-      font-weight: 500;
-      color: #fff;
-      margin: 0;
-    }
-
     section {
-      padding: 6rem 2rem 4rem;
+      padding: 3rem 2rem;
       text-align: center;
     }
 
     section h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
       font-weight: 400;
     }
 
     section p {
       font-size: 1rem;
       max-width: 600px;
-      margin: 0 auto 2rem;
+      margin: 0 auto 1.5rem;
       line-height: 1.6;
       color: #aaa;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      padding: 0.65rem 1.3rem;
       background-color: transparent;
       color: #fff;
       border: 1px solid #444;
       font-weight: 500;
       border-radius: 4px;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .btn:hover {
       background-color: #fff;
       color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
     }
 
     .products {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 1.5rem;
+      margin-top: 1rem;
     }
 
     .product {
       background: #111;
       border-radius: 8px;
-      width: 240px;
+      width: 220px;
       padding: 1rem;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .product:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 6px 16px rgba(255, 255, 255, 0.08);
     }
 
     .product img {
@@ -104,8 +94,8 @@
     }
 
     .product h3 {
-      margin: 0.75rem 0 0.25rem;
-      font-size: 1.1rem;
+      margin: 0.6rem 0 0.2rem;
+      font-size: 1.05rem;
       color: #eee;
     }
 
@@ -116,8 +106,8 @@
     }
 
     .newsletter input[type="email"] {
-      padding: 0.6rem;
-      width: 240px;
+      padding: 0.55rem;
+      width: 220px;
       border: none;
       border-radius: 4px;
       background: #1a1a1a;
@@ -126,26 +116,28 @@
     }
 
     .newsletter button {
-      padding: 0.6rem 1rem;
+      padding: 0.55rem 0.9rem;
       border: 1px solid #444;
       border-radius: 4px;
       background: transparent;
       color: #fff;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .newsletter button:hover {
       background: #fff;
       color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
     }
 
     .social-links {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
 
     .social-links a {
-      margin: 0 0.5rem;
+      margin: 0 0.4rem;
       font-size: 1.1rem;
       color: #888;
       transition: color 0.3s ease;
@@ -157,20 +149,22 @@
 
     footer {
       background-color: #000;
-      padding: 2rem;
+      padding: 1.5rem;
       text-align: center;
       font-size: 0.85rem;
       color: #666;
+    }
+
+    /* Gradient background for About section */
+    .about-section {
+      background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+      padding: 3rem 2rem;
     }
   </style>
 </head>
 
 <body>
   <div class="top-left-title">SÖLVI | Minimal Streetwear</div>
-
-  <header>
-    <h1>Welcome to SÖLVI</h1>
-  </header>
 
   <section>
     <h2>Minimal Streetwear</h2>
@@ -201,7 +195,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="about-section">
     <h2>About SÖLVI</h2>
     <p>
       Founded with a minimalist ethos, SÖLVI blends Nordic sensibility with urban streetwear. 
