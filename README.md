@@ -6,7 +6,7 @@
 # What is Solvi-Label
 -[Place Holder]<-same answer for about section 
 
- What's Are Next Move
+# What's Are Next Move
 -Fix Collection.html redirects
 -Add X or twitter Link later
 -Finalize products and images
