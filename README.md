@@ -1,8 +1,12 @@
 ## What's New!
--[Place Holder]
+-All Redirect are now Working
 
 # What is Solvi-Label
--[Place Holder]
+-[Place Holder]<-same answer for about section 
 
 # What's Are Next Move
--Add list of thing to do
+-Fix Collection.html redirects
+-Add X or twitter Link later
+-Finalize products and images
+-Clean up homepage and add more
+-Add a way to cheak Purchases
