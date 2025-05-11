@@ -4,66 +4,63 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <div class="top-left-title">SÖLVI | Minimal Streetwear</div>
-  <!-- Adds Google Fonts and sets Theme -->
+  <title>SÖLVI | Minimal Streetwear</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    .top-left-title {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-
-    .top-left-title {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 500;
-}
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #0a0a0a;
       color: #eaeaea;
     }
+
+    .top-left-title {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-size: 1rem;
+      color: #fff;
+      font-weight: 500;
+      z-index: 10;
+    }
+
     a {
       color: inherit;
       text-decoration: none;
     }
+
     header {
-      margin-top: 10rem;
-      padding: 4rem 2rem 2rem;
+      padding: 10rem 2rem 4rem;
       text-align: center;
     }
+
     header h1 {
       font-size: 3.5rem;
       letter-spacing: 4px;
       font-weight: 500;
       color: #fff;
+      margin: 0;
     }
+
     section {
-      padding: 3rem 2rem;
+      padding: 6rem 2rem 4rem;
       text-align: center;
     }
+
     section h2 {
       font-size: 2rem;
-      margin-top: 10rem:
-      margin-bottom: 10rem;
+      margin-bottom: 2rem;
       font-weight: 400;
     }
+
     section p {
       font-size: 1rem;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 2rem;
       line-height: 1.6;
       color: #aaa;
     }
+
     .btn {
       display: inline-block;
       margin-top: 2rem;
@@ -71,15 +68,16 @@
       background-color: transparent;
       color: #fff;
       border: 1px solid #444;
-      text-decoration: none;
       font-weight: 500;
       border-radius: 4px;
       transition: all 0.3s ease;
     }
+
     .btn:hover {
       background-color: #fff;
       color: #000;
     }
+
     .products {
       display: flex;
       flex-wrap: wrap;
@@ -87,6 +85,7 @@
       gap: 2rem;
       margin-top: 2rem;
     }
+
     .product {
       background: #111;
       border-radius: 8px;
@@ -94,23 +93,28 @@
       padding: 1rem;
       transition: transform 0.3s ease;
     }
+
     .product:hover {
       transform: translateY(-5px);
     }
+
     .product img {
       width: 100%;
       border-radius: 4px;
     }
+
     .product h3 {
       margin: 0.75rem 0 0.25rem;
       font-size: 1.1rem;
       color: #eee;
     }
+
     .product p {
       margin: 0;
       color: #888;
       font-size: 0.9rem;
     }
+
     .newsletter input[type="email"] {
       padding: 0.6rem;
       width: 240px;
@@ -120,6 +124,7 @@
       color: #ccc;
       margin-right: 0.5rem;
     }
+
     .newsletter button {
       padding: 0.6rem 1rem;
       border: 1px solid #444;
@@ -129,22 +134,27 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
+
     .newsletter button:hover {
       background: #fff;
       color: #000;
     }
+
     .social-links {
       margin-top: 2rem;
     }
+
     .social-links a {
       margin: 0 0.5rem;
       font-size: 1.1rem;
       color: #888;
       transition: color 0.3s ease;
     }
+
     .social-links a:hover {
       color: #fff;
     }
+
     footer {
       background-color: #000;
       padding: 2rem;
@@ -154,8 +164,14 @@
     }
   </style>
 </head>
-  <!-- This is The Start of the layout of website -->
+
 <body>
+  <div class="top-left-title">SÖLVI | Minimal Streetwear</div>
+
+  <header>
+    <h1>Welcome to SÖLVI</h1>
+  </header>
+
   <section>
     <h2>Minimal Streetwear</h2>
     <p>SÖLVI is a Nordic-inspired clothing brand focused on timeless design, muted tones, and raw authenticity. No hype. Just substance.</p>
@@ -185,7 +201,6 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section>
     <h2>About SÖLVI</h2>
     <p>
@@ -206,7 +221,6 @@
     <div class="social-links">
       <a href="https://www.instagram.com/solvilabel?igsh=eG1mZTRybGhzNHQ5&utm_source=qr" target="_blank">Instagram</a>
       <a href="https://www.tiktok.com/@solvilabelofficial?_t=ZT-8wFwO1lrJBG&_r=1" target="_blank">TikTok</a>
-      <!--add link where # is <a href="#" target="_blank">X</a> -->
     </div>
   </section>
 
@@ -215,4 +229,3 @@
   </footer>
 </body>
 </html>
-<!-- Patches and comments added by ChuaKenja. Main content By Owner -->
