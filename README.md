@@ -1,5 +1,5 @@
 ## What's New!
--All Redirect are now Working
+-All Redirects are now Working
 
 # What is Solvi-Label
 -[Place Holder]<-same answer for about section 
