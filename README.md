@@ -1,7 +1,6 @@
 ## Website Link
--Fix Collection.html redirects
 -https://solvilabel.github.io/Solvi-Site/index.html
-## What's New!
+# What's New!
 -All Redirects are now Working
 
 # What is Solvi-Label
