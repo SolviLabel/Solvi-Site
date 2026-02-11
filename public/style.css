@@ -6,6 +6,11 @@ body {
   color: #d4d4d4;
 }
 
+.dark-mode {
+  background-color: #1e1e2f;
+  color: #d4d4d4;
+}
+
 .container {
   max-width: 800px;
   margin: 40px auto;
@@ -85,7 +90,7 @@ input[type="file"] {
 
 .file-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #4b0082;
   font-weight: bold;
 }
 
