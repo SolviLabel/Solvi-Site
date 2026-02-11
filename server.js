@@ -5,7 +5,7 @@ const fs = require('fs');
 const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 
-// Set up static files
+// Serve static files from the public directory
 app.use(express.static('public'));
 
 // Set up multer for file uploads
