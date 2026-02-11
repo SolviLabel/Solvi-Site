@@ -23,3 +23,5 @@ do npm install which should work though i have heard of somethings that often go
 
 then in your power shell cd .. untill your at C:\ and cd C:\Users\"yourusername"\Downloads\Solvi-Site
 and then node server.js
+
+If their are any question feel free to ask but don't expect an immedate response
