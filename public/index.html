@@ -4,24 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Drive</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Web Drive</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
-      <input type="file" name="files" multiple required />
-      <button type="submit" class="upload-button">Upload Files</button>
-    </form>
-    <hr />
-    <div class="file-list">
-      <h2>Files</h2>
-      <ul id="file-list">
-        <!-- Files will appear here -->
-      </ul>
-    </div>
-  </div>
+  <h1>Web Drive</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="files" multiple required />
+    <button type="submit">Upload</button>
+  </form>
+  <hr />
+  <h2>Files</h2>
+  <ul id="file-list">
+    <!-- Files will appear here -->
+  </ul>
 
-  <script src="script.js"></script>
+  <script>
+    // Fetch file list from the server
+    fetch('/api/files')
+      .then(response => response.json())
+      .then(files => {
+        const fileList = document.getElementById('file-list');
+        fileList.innerHTML = ''; // Clear the list
+
+        files.forEach(file => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <a href="/download/${file}">${file}</a>
+            <a href="/delete/${file}" onclick="return confirm('Are you sure you want to delete this file?')">Delete</a>
+          `;
+          fileList.appendChild(li);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching files:', error);
+      });
+  </script>
 </body>
 </html>
