@@ -25,3 +25,5 @@ then in your power shell cd .. untill your at C:\ and cd C:\Users\"yourusername"
 and then node server.js
 
 If their are any question feel free to ask but don't expect an immedate response
+
+Quick warning this does give people access to download and upload files to and from your pc. this not only means you need port forwarding but also dont share to everyone. i might add passwords later but for now use play.it for tunneling as it doesn't expose your ip.
