@@ -19,11 +19,14 @@ scoop bucket add extras
 scoop install nodejs
 
 Once you have all of that and npm
-do npm install which should work though i have heard of somethings that often go wrong. I will update this later to solve those issues but if you use git to clone this repo you should be fine
+do {npm install then npm install express multer uuid} which should work though i have heard of somethings that often go wrong. I will update this later to solve those issues but if you use git to clone this repo you should be fine
+
 
 then in your power shell cd .. untill your at C:\ and cd C:\Users\"yourusername"\Downloads\Solvi-Site
 and then node server.js
 
 If their are any question feel free to ask but don't expect an immedate response
+
+One last thing you dont need npm unless you edit the file structer if not you only need nodejs
 
 Quick warning this does give people access to download and upload files to and from your pc. this not only means you need port forwarding but also dont share to everyone. i might add passwords later but for now use play.it for tunneling as it doesn't expose your ip.
