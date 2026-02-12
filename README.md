@@ -49,7 +49,7 @@ npm install then npm install express multer uuid
 ```
 after make sure you are inside the file as shown below:
 <p align="center">
-   <img src="https://github.com/SolviLabel/Solvi-Site/bin/Screenshot 2026-02-12 141428" alt="chuakenja" width="200"/>
+   <img src="https://https://github.com/SolviLabel/Solvi-Site/blob/main/bin/Screenshot%202026-02-12%20141428.png" alt="chuakenja" width="200"/>
 </p>
 run `node server/app.js`
 which should output `Server running on http://localhost:3000`
