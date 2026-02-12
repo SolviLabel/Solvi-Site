@@ -2,10 +2,10 @@
   "name": "solvi-site",
   "version": "1.0.0",
   "description": "- node.js\r - npm\r - powershell",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/SolviLabel/Solvi-Site#readme",
   "dependencies": {
     "express": "^5.2.1",
+    "mongoose": "^9.2.1",
     "multer": "^2.0.2",
     "uuid": "^13.0.0"
   }

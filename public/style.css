@@ -1,85 +1,133 @@
-/* Global Styles */
+/* public/style.css */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #0a0a0a;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 20px;
+  color: #fff;
 }
 
-.container {
-  background-color: #1e1e1e;
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #3a005e;
-  width: 100%;
-  max-width: 600px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin: 15px 0 5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00ffcc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #00cc99;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.top-left-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.first-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.first-section h2 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #4b0082;
 }
 
-p {
+.first-section p {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
 
-.file-list {
-  margin-bottom: 30px;
-}
-
-.file-list h2 {
-  margin-bottom: 10px;
-}
-
-.file-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.file-list li {
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #2e2e2e;
+.btn {
+  padding: 12px 24px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #0a0a0a;
+  background-color: #00ffcc;
   border-radius: 5px;
-  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.file-list li:hover {
-  background-color: #3a005e;
+.btn:hover {
+  background-color: #00cc99;
 }
 
-#upload-form {
+.products {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
 }
 
-#upload-form input[type="file"] {
-  padding: 10px;
-  background-color: #2e2e2e;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
+.product {
+  text-align: center;
+  margin: 10px;
+  flex: 1 1 200px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
-#upload-form button {
-  padding: 10px 20px;
-  background-color: #4b0082;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.product:hover {
+  transform: scale(1.05);
 }
 
-#upload-form button:hover {
-  background-color: #3a005e;
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+}
+
+.product p {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a0a0a;
+  color: #666;
 }

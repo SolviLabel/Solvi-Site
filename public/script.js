@@ -1,37 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const fileList = document.getElementById("file-list");
-  const uploadForm = document.getElementById("upload-form");
+// public/script.js
+document.getElementById('login-form').addEventListener('submit', function (e) {
+  e.preventDefault();
 
-  // Load file list
-  fetch("/api/files")
-    .then((res) => res.json())
-    .then((files) => {
-      files.forEach((file) => {
-        const li = document.createElement("li");
-        li.textContent = file;
-        li.addEventListener("click", () => {
-          window.open(`/download/${file}`, "_blank");
-        });
-        fileList.appendChild(li);
-      });
+  const formData = new FormData(this);
+  const username = formData.get('username');
+  const password = formData.get('password');
+
+  fetch('/auth/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ username, password }),
+  })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        window.location.href = '/home.html';
+      } else {
+        alert('Invalid username or password');
+      }
     })
-    .catch((err) => {
-      console.error("Error loading files:", err);
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred during login.');
     });
-
-  // Handle file upload
-  uploadForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const formData = new FormData(uploadForm);
-    fetch("/upload", {
-      method: "POST",
-      body: formData,
-    })
-      .then(() => {
-        location.reload();
-      })
-      .catch((err) => {
-        console.error("Error uploading files:", err);
-      });
-  });
 });
