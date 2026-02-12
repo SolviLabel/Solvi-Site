@@ -1,32 +1,55 @@
-##How To Install Server Drive?
-#Prerequisites
-- node.js
-- npm
-- powershell
+# Dependencies
+## Node.js
+### Windows
+- Download Scoop with:
+   ```shell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+   ```
+- Then run:
+   ```shell
+   Scoop install git
+   scoop bucket add extras
+   scoop install main/nodejs
+   # Verify the Node.js version:
+   node -v 
+   # Should print "vx.x.x".
+   # Verify npm version:
+   npm -v 
+   # Should print "x.x.x".
+   ```
+   or [download manually](https://nodejs.org/en/download)
+### Linux
+- Their are tons of ways one can install node.js via Linux so if you something different that is fine
+```shell
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+# Download and install Node.js:
+nvm install 24
+# Verify the Node.js version:
+node -v 
+# Should print "v24.13.1".
+# Verify npm version:
+npm -v 
+# Should print "11.8.0".
+```
 
-If you do not have node.js or npm
-- For npm
-curl -qL https://www.npmjs.com/install.sh | sh
-are visit https://www.npmjs.com/package/npm
-for node.js you can use all sorts of downloaders like git and scoop
-for windows I prefer to use scoop which is done by first typing:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-
-Then after that completes do:
-scoop install git
-scoop bucket add extras
-scoop install nodejs
-
-Once you have all of that and npm
-do {npm install then npm install express multer uuid} which should work though i have heard of somethings that often go wrong. I will update this later to solve those issues but if you use git to clone this repo you should be fine
-
-
-then in your power shell cd .. untill your at C:\ and cd C:\Users\"yourusername"\Downloads\Solvi-Site
-and then node server.js
-
-If their are any question feel free to ask but don't expect an immedate response
-
-One last thing you dont need npm unless you edit the file structer if not you only need nodejs
-
-Quick warning this does give people access to download and upload files to and from your pc. this not only means you need port forwarding but also dont share to everyone. i might add passwords later but for now use play.it for tunneling as it doesn't expose your ip.
+[Manual install instructions](https://nodejs.org/en/download)
+# Installation
+Once you have done all of that run:
+```
+#navigate to where you installed the github repo
+npm install
+npm install then npm install express multer uuid
+#this should update and fix any of the other dependencies automattically
+#if nodejs outputs error codes try redownloading repo and just continue
+#to next step
+```
+after make sure you are inside the file as shown below:
+![[Pasted image 20260212141444.png]]
+run `node server/app.js`
+which should output `Server running on http://localhost:3000`
+and your file sharing server should be good to go
+check server/models/User.js for usernames and passwords
