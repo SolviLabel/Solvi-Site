@@ -1,4 +1,3 @@
-// public/file.js
 document.addEventListener("DOMContentLoaded", () => {
   // Handle file upload
   const uploadForm = document.getElementById("upload-form");
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       files.forEach((file) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.href = `/uploads/${file}`;
+        a.href = `/file/download/${file}`;
         a.textContent = file;
         a.target = "_blank"; // Open in new tab
         li.appendChild(a);
