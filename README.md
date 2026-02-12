@@ -48,7 +48,7 @@ npm install then npm install express multer uuid
 #to next step
 ```
 after make sure you are inside the file as shown below:
-<p align="center">
+<p align="left">
    <img width="487" height="19" alt="Screenshot 2026-02-12 141428" src="https://github.com/user-attachments/assets/979a3d6f-6756-469c-b350-5fd3573243ad" />
 </p>
 run `node server/app.js`
