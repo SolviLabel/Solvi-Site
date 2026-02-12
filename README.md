@@ -48,7 +48,9 @@ npm install then npm install express multer uuid
 #to next step
 ```
 after make sure you are inside the file as shown below:
-![[Pasted image 20260212141444.png]]
+<p align="center">
+   <img src="https://github.com/SolviLabel/Solvi-Site/bin/Screenshot 2026-02-12 141428" alt="chuakenja" width="200"/>
+</p>
 run `node server/app.js`
 which should output `Server running on http://localhost:3000`
 and your file sharing server should be good to go
